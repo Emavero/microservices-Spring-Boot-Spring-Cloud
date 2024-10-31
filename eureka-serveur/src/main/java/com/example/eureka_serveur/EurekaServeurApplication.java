@@ -1,9 +1,11 @@
 package com.example.eureka_serveur;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApp
+@SpringBootApplication
+@EnableEurekaServer
 public class EurekaServeurApplication {
 
 	public static void main(String[] args) {
