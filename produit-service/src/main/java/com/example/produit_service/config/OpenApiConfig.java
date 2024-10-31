@@ -18,7 +18,7 @@ public class OpenApiConfig {
                         .title("Produit Service API")
                         .description("API pour la gestion des produits")
                         .version("v1.0")
-                        .contact(new Contact().name("Support API").email("preiraclement79@gmail.com"))
+                        .contact(new Contact().name("Support API").email("test@gmail.com"))
                 );
     }
 }
