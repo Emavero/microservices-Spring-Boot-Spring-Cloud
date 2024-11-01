@@ -8,7 +8,8 @@
             "mainClass": "com.example.eureka_serveur.EurekaServeurApplication",
             "projectName": "eureka-serveur",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57220 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=eureka-serveur"
         },
         {
             "type": "java",
@@ -28,6 +29,16 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.example.api_gateway.ApiGatewayApplication",
             "projectName": "api-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ClientserviceApplication<clientservice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.clientservice.ClientserviceApplication",
+            "projectName": "clientservice",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
