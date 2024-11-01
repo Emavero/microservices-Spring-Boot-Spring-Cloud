@@ -8,6 +8,6 @@ import com.example.produit_service.entity.Produit;
 
 @Mapper(componentModel = "spring")
 public interface ProduitMapper {
-    ProduitDTO toDTO(Produit produit);
-    Produit toEntity(ProduitDTO produitDTO);
+    ProduitDTO toProduitDTO(Produit produit);
+    Produit toProduit(ProduitDTO produitDTO);
 }

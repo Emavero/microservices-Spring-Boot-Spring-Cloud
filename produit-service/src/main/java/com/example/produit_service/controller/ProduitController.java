@@ -42,21 +42,21 @@ public class ProduitController {
  @GetMapping
  public List <ProduitDTO> getAllProduits(){
     return produitService.getAllProduits().stream()
-           .map(produitMapper::toDTO)
+           .map(produitMapper::toProduitDTO)
            .collect(Collectors.toList());
          }
  
  @Operation(summary = "Récupère un produit par son identifiant")
  @GetMapping("/{id}")
  public ProduitDTO getProduitById(@PathVariable Long id){
-    return produitMapper.toDTO(produitService.getProduitById(id));
+    return produitMapper.toProduitDTO(produitService.getProduitById(id));
  }
 
  @Operation(summary = "Crée un nouveau produit")
  @PostMapping
  public ProduitDTO createProduit(@RequestBody ProduitDTO produitDTO){
-    Produit produit =produitMapper.toEntity(produitDTO);
-    return produitMapper.toDTO(produitService.saveProduit(produit));
+    Produit produit =produitMapper.toProduit(produitDTO);
+    return produitMapper.toProduitDTO(produitService.saveProduit(produit));
  }
 
  
