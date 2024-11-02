@@ -117,9 +117,8 @@ POST /clientservice/clients
 Content-Type: application/json
 
 {
-    "nom": "Client 1",
-    "email": "client1@example.com",
-    "telephone": "1234567890"
+    "nom": "Ensias",
+    "prenom": "Genie Logiciel"
 }
 ```
 
