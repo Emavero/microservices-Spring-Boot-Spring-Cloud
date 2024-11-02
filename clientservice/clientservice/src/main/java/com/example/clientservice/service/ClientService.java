@@ -3,12 +3,14 @@ package com.example.clientservice.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 
 import com.example.clientservice.entity.Client;
 import com.example.clientservice.repository.ClientRepository;
 
 @Service
+
 public class ClientService {
     
     @Autowired
